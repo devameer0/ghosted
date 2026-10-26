@@ -155,8 +155,8 @@ body[data-page=home]{background:#0a0a0a}
 .by:hover{color:#fff}
 .by:focus-visible{outline:3px solid #fff;outline-offset:2px;border-radius:12px}
 .go{position:relative;z-index:1;display:grid;place-items:center;margin:0;padding:0}
-.round{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;min-height:clamp(56px,6vw,72px);min-width:calc(4.24em + 2*clamp(2rem,5vw,3.2rem));padding:0 clamp(2rem,5vw,3.2rem);border-radius:18px;background:#fff;color:#000;
-  font:600 clamp(1.1rem,2vw + .4rem,1.6rem)/1.1 var(--sans);letter-spacing:-.005em;text-align:center;text-decoration:none;white-space:nowrap;-webkit-tap-highlight-color:transparent;touch-action:manipulation;
+.round{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;min-height:clamp(56px,6vw,72px);--f:clamp(1.1rem,2vw + .4rem,1.6rem);min-width:calc(4.24*var(--f) + 2*clamp(2rem,5vw,3.2rem));padding:0 clamp(2rem,5vw,3.2rem);border-radius:18px;background:#fff;color:#000;
+  font:800 calc(var(--f)*1.75)/1 var(--sans);letter-spacing:.02em;text-align:center;text-decoration:none;white-space:nowrap;-webkit-tap-highlight-color:transparent;touch-action:manipulation;
   box-shadow:0 0 0 1px rgba(255,255,255,.3),0 22px 54px -20px rgba(255,255,255,.4);transition:transform .35s cubic-bezier(.2,.8,.2,1),background .25s,box-shadow .3s}
 .round:hover{background:#ececec;transform:translateY(-2px) scale(1.02);box-shadow:0 0 0 1px rgba(255,255,255,.5),0 28px 60px -20px rgba(255,255,255,.5)}
 .round:active{transform:none}
