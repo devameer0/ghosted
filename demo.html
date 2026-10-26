@@ -3,68 +3,68 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ghosted — Example</title>
-<meta name="description" content="Example of what the Ghosted bot sends you. Example data.">
-<meta name="theme-color" content="#0a0f0d">
+<title>Ghosted — Who unfollowed me? Example</title>
+<meta name="description" content="Who unfollowed me? Example of the message the Ghosted bot sends you. Example data.">
+<meta name="theme-color" content="#c9a574">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;700&family=Syne:wght@600;800&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 10 10%27%3E%3Ccircle cx=%275%27 cy=%275%27 r=%273%27 fill=%27%23ff5d3b%27/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%23f4eedd%27/%3E%3Cpath d=%27M5 6 L27 26 M26 5 L7 27%27 stroke=%27%23d63f27%27 stroke-width=%274%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 <script src="boot.js"></script>
 </head>
 <body data-page="demo">
-<a class="skip" href="#gone">Skip to list</a>
-<canvas id="sky" aria-hidden="true"></canvas>
-<div class="stage">
-  <header class="c tl stat">
-    <a class="mark" href="./" aria-label="Ghosted home">← Ghosted<i>.</i></a>
-    <span class="tiny first">Gone today</span>
-    <p class="big" id="count" aria-label="4 people gone today, example">4</p>
-    <span class="tiny">Since setup</span>
-  </header>
+<a class="skip" href="#bot">Skip to bot link</a>
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false"><defs>
+  <filter id="wob" x="-6%" y="-25%" width="112%" height="150%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5"/></filter>
+  <filter id="ink" x="-2%" y="-5%" width="104%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="9" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/></filter>
+</defs></svg>
+<div class="desk">
+<div class="sheetwrap"><div class="sheet demo">
+  <span class="holes" aria-hidden="true"></span>
+  <header class="top"><a class="brand" href="./" aria-label="Ghosted home">← Ghosted</a></header>
+  <div class="dgrid">
+    <div class="dh"><h1 class="q q-s"><span>Who</span> <span class="u">unfollowed<svg class="ul" viewBox="0 0 400 30" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M4 20 C 70 6, 130 28, 200 14 S 330 8, 396 18"/><path class="thin" pathLength="1" d="M26 27 C 120 21, 260 29, 376 22"/></svg></span> <span>me?</span></h1></div>
 
-  <aside class="c tr stat end">
-    <span class="tag">Example</span>
-    <span class="tiny">New</span>
-    <span class="plus" aria-label="5 new followers, example">+5</span>
-    <a class="tip" data-tip href="#">Tip</a>
-  </aside>
+    <section class="receipt-w" aria-label="Example message from the bot">
+      <span class="tape" aria-hidden="true"></span>
+      <div class="receipt">
+        <svg class="zz zt" viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 12 L0 6 L10 1 L19 7 L30 2 L41 8 L50 1 L62 7 L71 2 L83 8 L92 1 L104 6 L113 2 L124 8 L134 1 L145 7 L154 2 L166 8 L176 1 L187 6 L197 2 L208 8 L218 1 L230 7 L239 2 L251 8 L260 1 L272 6 L281 2 L292 7 L300 3 L300 12 Z"/></svg>
+        <div class="rb">
+          <p class="rh">GHOSTED BOT</p>
+          <p class="stamp">Example</p>
+          <p class="rrow"><span>Gone today</span><i></i><b>4</b></p>
+          <ul class="rl" aria-label="Unfollowed since setup. Example data."><li><a href="https://x.com/example_one" target="_blank" rel="noopener noreferrer"><span>@example_one</span><time>09:12</time></a></li><li><a href="https://x.com/example_two" target="_blank" rel="noopener noreferrer"><span>@example_two</span><time>08:40</time></a></li><li><a href="https://x.com/example_three" target="_blank" rel="noopener noreferrer"><span>@example_three</span><time>07:15</time></a></li><li><a href="https://x.com/example_four" target="_blank" rel="noopener noreferrer"><span>@example_four</span><time>06:03</time></a></li></ul>
+          <p class="rrow"><span>New</span><i></i><b>+5</b></p>
+          <p class="rrow"><span>Checked</span><i></i><b>4m ago</b></p>
+          <p class="rf">Since setup. Example data.</p>
+        </div>
+        <svg class="zz zb" viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 0 L0 6 L9 11 L20 5 L29 10 L42 4 L52 11 L61 5 L73 10 L82 4 L94 11 L103 5 L115 10 L125 4 L136 11 L146 5 L157 10 L167 4 L178 11 L188 5 L199 10 L209 4 L221 11 L230 5 L241 10 L252 4 L263 11 L272 5 L283 10 L292 4 L300 8 L300 0 Z"/></svg>
+      </div>
+    </section>
 
-  <svg class="ringtext" id="ringtext" aria-hidden="true" viewBox="0 0 400 400" width="400" height="400"><g><path id="rp" d="M200,12 a188,188 0 1,1 -.01,0" fill="none"/><text><textPath href="#rp" textLength="1181" lengthAdjust="spacing">EXAMPLE · 1,204 · HIDDEN · EXAMPLE · 1,204 · HIDDEN · EXAMPLE · 1,204 · HIDDEN · EXAMPLE · 1,204 · HIDDEN · EXAMPLE · 1,204 · HIDDEN · EXAMPLE · 1,204 · HIDDEN · </textPath></text></g></svg>
-
-  <div class="timer" role="timer" aria-label="Next check, example">
-    <svg viewBox="0 0 100 100" aria-hidden="true"><circle class="tr0" cx="50" cy="50" r="46"/><circle class="tr1" id="arc" cx="50" cy="50" r="46" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
-    <span class="tiny">Next check</span>
-    <span class="clock" id="clock">10:00</span>
-  </div>
-
-  <main id="gone">
-    <h1 class="vh">Gone today (example)</h1>
-    <ol class="ghosts" id="ghostlist" aria-label="Unfollowed since setup. Example data.">
-      <li><a class="ghost" href="https://x.com/example_one" target="_blank" rel="noopener noreferrer"><i></i><span>@example_one</span><time>09:12</time></a></li>
-      <li><a class="ghost" href="https://x.com/sample_person" target="_blank" rel="noopener noreferrer"><i></i><span>@sample_person</span><time>08:40</time></a></li>
-      <li><a class="ghost" href="https://x.com/demo_dana" target="_blank" rel="noopener noreferrer"><i></i><span>@demo_dana</span><time>07:15</time></a></li>
-      <li><a class="ghost" href="https://x.com/mock_mira" target="_blank" rel="noopener noreferrer"><i></i><span>@mock_mira</span><time>06:03</time></a></li>
-    </ol>
-  </main>
-
-  <footer class="bottom">
-    <div class="status">
-      <span class="live" id="checked">Checked 4m ago</span>
-      <span class="rule">Only leavers after setup.</span>
-      <span class="tiny">Read-only · Example data</span>
-    </div>
     <ol class="steps" aria-label="Steps">
-      <li><b>1</b>Get bot</li>
-      <li><b>2</b>Connect X</li>
-      <li><b>3</b>Get alerts</li>
+      <li><span class="n">1</span><span class="s">Get bot</span></li>
+      <li><svg class="sa" viewBox="0 0 40 50" aria-hidden="true" focusable="false"><path d="M6 4 C 8 24, 18 34, 30 40 M20 40 L31 41 L27 30"/></svg><span class="n">2</span><span class="s">Connect X</span></li>
+      <li><svg class="sa" viewBox="0 0 40 50" aria-hidden="true" focusable="false"><path d="M6 4 C 8 24, 18 34, 30 40 M20 40 L31 41 L27 30"/></svg><span class="n">3</span><span class="s">Get alerts</span></li>
     </ol>
-    <a class="cta" data-bot href="#">Get the bot ↗</a>
+
+    <div class="dcta">
+      <p class="only"><span>Only after setup.</span><svg class="circ" viewBox="0 0 220 60" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M12 30 C 6 8, 90 2, 150 6 C 208 10, 218 42, 140 51 C 70 58, 4 52, 14 22"/></svg></p>
+      <div class="cta-wrap">
+        <p class="hint"><span>start here</span><svg class="arrow" viewBox="0 0 120 70" aria-hidden="true" focusable="false"><path d="M6 6 C 28 4, 74 12, 100 50"/><path d="M84 36 L101 53 L79 54"/></svg></p>
+        <span class="notew"><a class="note" id="bot" data-bot href="#">Get the bot</a></span>
+      </div>
+    </div>
+  </div>
+  <footer class="fine">
+    <span>No sign-in. No tracking.</span>
+    <a href="https://x.com/devameer0">@devameer0</a>
+    <a class="tip" data-tip href="#" hidden>Tip</a>
   </footer>
+</div></div>
 </div>
 <noscript><p class="nojs">Get the bot: enable JavaScript for the link.</p></noscript>
-<div class="cur" aria-hidden="true"></div>
 <script src="config.js"></script>
 <script src="app.js"></script>
 </body>
