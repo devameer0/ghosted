@@ -219,7 +219,7 @@
   var botUrl = (typeof BOT_URL === 'string' && /^https?:\/\//.test(BOT_URL)) ? BOT_URL : '#';
   var tipUrl = (typeof TIP_URL === 'string' && /^https?:\/\//.test(TIP_URL)) ? TIP_URL : '#';
   Array.prototype.forEach.call(document.querySelectorAll('[data-bot]'), function (a) { a.setAttribute('href', botUrl); a.rel = 'noopener noreferrer'; });
-  Array.prototype.forEach.call(document.querySelectorAll('[data-tip]'), function (a) { a.setAttribute('href', tipUrl); a.rel = 'noopener noreferrer'; a.target = '_blank'; });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-tip]'), function (a) { if (tipUrl === '#' || /example\.com/.test(tipUrl)) { a.hidden = true; a.style.display = 'none'; return; } a.setAttribute('href', tipUrl); a.rel = 'noopener noreferrer'; a.target = '_blank'; });
 
   /* ---------- example page: fixed example data, nothing fetched ---------- */
   var CYCLE = 600, left0 = 372, t0 = Date.now(); // pretend the next check is in 6:12, then loop every 10:00

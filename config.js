@@ -6,7 +6,7 @@
  * "Unfollower Tracker" template. `node scripts/check-config.js` warns while it is still the placeholder.
  * On Netlify / Cloudflare you can instead set a BOT_URL environment variable (see README); the build script writes it here.
  */
-var BOT_URL = 'https://example.com/REPLACE_WITH_TEMPLATE_LINK';
+var BOT_URL = "https://x.ai/bot/qg30RLq62kT_Ud04rGNFQ";
 
 /*
  * TIP BUTTON LINK (the small "Tip" button on the landing and example pages).
